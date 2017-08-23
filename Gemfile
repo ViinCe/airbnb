@@ -24,8 +24,11 @@ gem 'bootstrap-sass'
 # Devise
 gem 'devise'
 gem 'devise-i18n'
+gem 'rails-i18n'
 
 gem "paperclip"
+
+gem "toastr-rails"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -38,7 +41,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'bcrypt', platform: :ruby
+#gem 'bcrypt', platform: :ruby
+gem 'bcrypt', '~> 3.1.11'
+#gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

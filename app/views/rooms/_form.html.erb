@@ -5,6 +5,9 @@
     <div class="panel-body">
         <div class="container">
             <%= form_for @room do |f| %>
+
+                <%= render 'shared/errors' %>
+
                 <div class="row">
 
                     <div class="col-md-4 select">
@@ -29,7 +32,7 @@
                         <div class="form-group">
                             <label>Combien de voyageurs ?</label>                            
                             <%= f.select :accomodate, [["1 voyageur", 1],["2 voyageurs", 2],["3 voyageurs", 3],
-                            ["4 voyageurs", 4],["5 voyageurs,", 5],["6 voyageurs", 6]], prompt:"A sélectionner...",
+                            ["4 voyageurs", 4],["5 voyageurs,", 5],["6 voyageurs", 6]], prompt:"A sélectionner...", 
                             class:"form-control" %>
                         </div>
                     </div>
@@ -114,7 +117,8 @@
                             <label>Prix par nuit</label>
                             <div class="input-group">
                                 <%= f.text_field :price, placeholder:"ex: 45€", class: "form-control" %>                                
-                            </div><div class="input-group-addon">€</div>
+                                <div class="input-group-addon">€</div>
+                            </div>
                         </div>                        
                     </div>
                 </div>

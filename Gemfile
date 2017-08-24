@@ -30,6 +30,8 @@ gem "paperclip"
 
 gem "toastr-rails"
 
+gem 'font-awesome-sass'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -42,7 +44,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 #gem 'bcrypt', platform: :ruby
-gem 'bcrypt', '~> 3.1.11'
+#gem 'bcrypt', '~> 3.1.11'
 #gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # Use Capistrano for deployment

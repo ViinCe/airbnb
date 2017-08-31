@@ -192,6 +192,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   byebug
+  cocaine
   coffee-rails (~> 4.2)
   devise
   devise-i18n

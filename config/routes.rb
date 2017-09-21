@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'your_trips' => 'reservations#your_trips', path: 'mes_voyages' 
   get 'your_reservations' => 'reservations#your_reservations', path: 'mes_reservations' 
 
+  get '/search' => 'pages#search'
+
   resources :users, only: [:show]
   resources :rooms, path: 'mes_annonces' do
     resources :reservations, only: [:create]

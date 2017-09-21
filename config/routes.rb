@@ -5,9 +5,13 @@ Rails.application.routes.draw do
                     :controllers=>{:registrations=>'registrations'}
 
   root 'pages#home'
+  
+  get '/preload' => 'reservations#preload'
+  get '/preview' => 'reservations#preview'
+  get 'your_trips' => 'reservations#your_trips', path: 'mes_voyages' 
 
   resources :users, only: [:show]
-  resources :rooms do
+  resources :rooms, path: 'mes_annonces' do
     resources :reservations, only: [:create]
   end
   resources :photos

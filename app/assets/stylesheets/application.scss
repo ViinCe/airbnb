@@ -236,3 +236,13 @@ input[type="checkbox"]:checked:before {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.home-link a, p {
+    color: #82888A;
+    text-decoration: none;
+}
+
+.home-link:hover a, .home-link:focus a {
+    color: #82888A;
+    text-decoration: none;
+}

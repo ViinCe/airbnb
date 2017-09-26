@@ -35,6 +35,7 @@ gem 'font-awesome-sass'
 
 # gem Google maps
 gem 'geocoder'
+gem 'redis'
 
 gem 'jquery-ui-rails'
 
